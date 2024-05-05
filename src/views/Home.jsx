@@ -5,6 +5,7 @@ import image2 from "../assets/image 2.png";
 import githubIcon from "../assets/github-icon.png";
 import linkedinIcon from "../assets/linkedin-icon.png";
 import twitterIcon from "../assets/twitter-icon.png";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
     return (
@@ -31,11 +32,8 @@ const AboutSection = () => {
                     <p className="font-light text-[20px] leading-relaxed">
                         Hello! I'm Raihan Maulana, a dedicated Software Engineer specializing in web development, UI/UX design, and Android app development. With a passion for innovation and a commitment to delivering exceptional user experiences, I'm here to bring your ideas to life. Let's build something amazing together!
                     </p>
-                    <div>
-                        
-                    </div>
                     <button className="bg-[#5BBCFF] px-4 py-2 rounded-[30px] text-white text-center">
-                        Learn More About Me
+                        <Link to="/about">Learn More About Me</Link>
                     </button>
                 </div>
             </div>
